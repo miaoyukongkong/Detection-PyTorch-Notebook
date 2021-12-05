@@ -12,7 +12,8 @@ export CFLAGS="-std=c99"
 python3 setup.py build_ext --inplace
 rm -rf build
 
-CUDA_ARCH="-gencode arch=compute_61,code=sm_61 "
+#GPU型号：NVIDIA GeForce 940MX
+CUDA_ARCH="-gencode arch=compute_50,code=sm_50"
 
 # compile NMS
 cd model/nms/src
